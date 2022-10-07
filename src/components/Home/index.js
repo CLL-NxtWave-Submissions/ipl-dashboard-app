@@ -47,9 +47,11 @@ export default class Home extends Component {
           src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
           alt="ipl logo"
         />
-        {teamsData.map(teamsDataItem => (
-          <TeamCard key={teamsDataItem.id} cardData={teamsDataItem} />
-        ))}
+        <ul className="ipl-team-card-collection">
+          {teamsData.map(teamsDataItem => (
+            <TeamCard key={teamsDataItem.id} cardData={teamsDataItem} />
+          ))}
+        </ul>
       </div>
     )
   }
