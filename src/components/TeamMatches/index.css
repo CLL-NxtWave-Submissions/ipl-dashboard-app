@@ -10,35 +10,41 @@
 }
 
 .rcb-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(to bottom, #1e293b, #a4261d);
 }
 
 .kkr-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(to bottom, #f7db00, #13418b);
 }
 
-.kp-background {
-  background-image: liner-gradient(to bottom);
+.kxp-background {
+  background-image: liner-gradient(to bottom, #d91c1f, #a4261d);
 }
 
 .csk-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(to bottom, #f26d22, #5755a7);
 }
 
 .rr-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(to bottom, #4f5db0, #5755a7, #13418b);
 }
 
 .mi-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(to bottom, #f26d22, #13418b, #ffffff33);
 }
 
 .sh-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(to bottom, #d91c1f, #f26d22, #ffffff33);
 }
 
 .dc-background {
-  background-image: liner-gradient(to bottom);
+  background-image: liner-gradient(
+    to bottom,
+    #4f5db0,
+    #13418b,
+    #a4261d,
+    #ffffff33
+  );
 }
 
 .team-matches-top-image {

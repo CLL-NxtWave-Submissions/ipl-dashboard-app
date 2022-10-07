@@ -8,7 +8,16 @@ import './index.css'
 
 let teamMatchesApiUrl = 'https://apis.ccbp.in/ipl/'
 
-const teamBackgroundGradientStyleMapping = {}
+const teamBackgroundGradientStyleMapping = {
+  RCB: 'rcb-background',
+  KKR: 'kkr-background',
+  KXP: 'kxp-background',
+  CSK: 'csk-background',
+  RR: 'rr-background',
+  MI: 'mi-background',
+  SH: 'sh-background',
+  DC: 'dc-background',
+}
 
 export default class TeamMatches extends Component {
   state = {
@@ -81,13 +90,21 @@ export default class TeamMatches extends Component {
       recentMatches,
     } = teamAndMatchesData
 
+    const {match} = this.props
+    const {params} = match
+    const {id} = params
+    const teamBackgroundGradientStylingClass =
+      teamBackgroundGradientStyleMapping[id]
+
     return isLoading ? (
       //   <div testid="loader">
       <div>
         <Loader type="Oval" color="#ffffff" height={50} width={50} />
       </div>
     ) : (
-      <div className="team-matches-bg-container">
+      <div
+        className={`team-matches-bg-container ${teamBackgroundGradientStylingClass}`}
+      >
         <img
           className="team-matches-top-image"
           src={teamBannerUrl}
