@@ -11,7 +11,7 @@
   font-family: 'Bree Serif';
 }
 
-.ipl.logo-img {
+.ipl-logo-img {
   height: 5rem;
   width: 5rem;
   margin-bottom: 2rem;
@@ -28,5 +28,11 @@
 @media (min-width: 768px) {
   .ipl-dashboard-bg-container {
     background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  }
+
+  .ipl-logo-img {
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 2rem;
   }
 }
