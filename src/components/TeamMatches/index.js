@@ -8,6 +8,8 @@ import './index.css'
 
 let teamMatchesApiUrl = 'https://apis.ccbp.in/ipl/'
 
+const teamBackgroundGradientStyleMapping = {}
+
 export default class TeamMatches extends Component {
   state = {
     isLoading: true,

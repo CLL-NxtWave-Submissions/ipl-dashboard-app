@@ -20,11 +20,13 @@ export default class Home extends Component {
   fetchTeamsData = async () => {
     const teamsDataAPIResponse = await fetch(teamsApiUrl)
     const fetchedTeamsData = await teamsDataAPIResponse.json()
-    const formattedTeamsData = fetchedTeamsData.map(fetchedTeamsDataItem => ({
-      id: fetchedTeamsDataItem.id,
-      name: fetchedTeamsDataItem.name,
-      teamImageUrl: fetchedTeamsDataItem.team_image_url,
-    }))
+    const formattedTeamsData = fetchedTeamsData.teams.map(
+      fetchedTeamsDataItem => ({
+        id: fetchedTeamsDataItem.id,
+        name: fetchedTeamsDataItem.name,
+        teamImageUrl: fetchedTeamsDataItem.team_image_url,
+      }),
+    )
 
     this.setState({
       isLoading: false,
