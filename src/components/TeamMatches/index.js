@@ -97,8 +97,8 @@ export default class TeamMatches extends Component {
       teamBackgroundGradientStyleMapping[id]
 
     return isLoading ? (
-      //   <div testid="loader">
-      <div>
+      <div testid="loader">
+        {/* <div> */}
         <Loader type="Oval" color="#ffffff" height={50} width={50} />
       </div>
     ) : (

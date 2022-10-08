@@ -38,8 +38,8 @@ export default class Home extends Component {
     const {isLoading, teamsData} = this.state
 
     return isLoading ? (
-      //   <div testid="loader">
-      <div>
+      <div testid="loader">
+        {/* <div> */}
         <Loader type="Oval" color="#ffffff" height={50} width={50} />
       </div>
     ) : (
