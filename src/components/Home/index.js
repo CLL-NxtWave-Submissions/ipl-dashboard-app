@@ -44,11 +44,16 @@ export default class Home extends Component {
       </div>
     ) : (
       <div className="ipl-dashboard-bg-container">
-        <img
-          className="ipl-logo-img"
-          src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
-          alt="ipl logo"
-        />
+        <div className="ipl-brand-container">
+          <img
+            className="ipl-logo-img"
+            src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
+            alt="ipl logo"
+          />
+
+          <h1 className="ipl-header">IPL Dashboard</h1>
+        </div>
+
         <ul className="ipl-team-card-collection">
           {teamsData.map(teamsDataItem => (
             <TeamCard key={teamsDataItem.id} cardData={teamsDataItem} />
