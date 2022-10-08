@@ -1,1 +1,81 @@
-/* Write your CSS here */
+.match-card-bg-container {
+  background-color: #0f172a;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  width: 35%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Bree Serif';
+}
+
+.match-card-competing-team-logo {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.match-card-competing-team-name {
+  font-size: 1rem;
+}
+
+.match-card-result {
+  font-size: 0.6rem;
+}
+
+.match-card-competing-team-name,
+.match-card-result {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.match-card-status {
+  font-size: 0.8rem;
+}
+
+.match-card-competing-team-name,
+.match-card-result,
+.match-card-status {
+  text-align: center;
+}
+
+.game-won {
+  color: #18ed66;
+}
+
+.game-lost {
+  color: #e31a1a;
+}
+
+@media (min-width: 768px) {
+  .match-card-bg-container {
+    width: 31%;
+  }
+
+  .match-card-competing-team-logo {
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 2rem;
+  }
+
+  .match-card-result {
+    font-size: 1rem;
+  }
+
+  .match-card-competing-team-name,
+  .match-card-result {
+    margin-bottom: 2rem;
+  }
+
+  .match-card-status {
+    font-size: 2rem;
+  }
+}
