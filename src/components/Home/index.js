@@ -4,6 +4,7 @@ import Loader from 'react-loader-spinner'
 import TeamCard from '../TeamCard'
 
 import './index.css'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 
 const teamsApiUrl = 'https://apis.ccbp.in/ipl'
 
