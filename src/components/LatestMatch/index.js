@@ -26,7 +26,7 @@ const LatestMatch = props => {
         <img
           className="competing-team-logo"
           src={competingTeamLogo}
-          alt={competingTeam}
+          alt={`latest match ${competingTeam}`}
         />
       </div>
 
