@@ -2,11 +2,11 @@
   background-color: #ffffff33;
   border: 0.1rem solid #ffffff;
   border-radius: 0.8rem;
-  width: 40vw;
-  height: 8rem;
+  width: 38vw;
+  height: 4.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -14,15 +14,15 @@
 }
 
 .team-image {
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 2.5rem;
   margin-right: 1rem;
 }
 
 .team-name {
   color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.6rem;
+  font-weight: 500;
   font-family: 'Bree Serif';
   text-align: center;
 }
@@ -31,13 +31,83 @@
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
+  .team-card-container {
+    height: 6rem;
+    margin-bottom: 2rem;
+    width: 40vw;
+  }
+
   .team-image {
+    height: 4.5rem;
+    width: 3.5rem;
+  }
+
+  .team-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 490px) {
+  .team-card-container {
     height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-image {
+    height: 6rem;
+    width: 5rem;
+  }
+
+  .team-name {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-card-container {
+    height: 10rem;
+    margin-bottom: 3rem;
+  }
+
+  .team-image {
+    height: 7.5rem;
+    width: 6.5rem;
+  }
+
+  .team-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .team-card-container {
+    height: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  .team-image {
+    height: 9rem;
     width: 8rem;
   }
 
   .team-name {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .team-card-container {
+    height: 16rem;
+    margin-bottom: 3rem;
+  }
+
+  .team-image {
+    height: 10rem;
+    width: 9rem;
+  }
+
+  .team-name {
+    font-size: 3rem;
   }
 }
