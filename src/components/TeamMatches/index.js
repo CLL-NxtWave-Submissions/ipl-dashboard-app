@@ -97,30 +97,34 @@ export default class TeamMatches extends Component {
     const teamBackgroundGradientStylingClass =
       teamBackgroundGradientStyleMapping[id]
 
-    return isLoading ? (
-      <div testid="loader">
-        {/* <div> */}
-        <Loader type="Oval" color="#ffffff" height={50} width={50} />
-      </div>
-    ) : (
+    return (
       <div
         className={`team-matches-bg-container ${teamBackgroundGradientStylingClass}`}
       >
-        <img
-          className="team-matches-top-image"
-          src={teamBannerUrl}
-          alt="team banner"
-        />
-        <h1 className="team-latest-matches-header">Latest Matches</h1>
-        <LatestMatch matchData={latestMatchDetails} />
-        <ul className="team-match-card-collection">
-          {recentMatches.map(recentMatchDataItem => (
-            <MatchCard
-              key={recentMatchDataItem.id}
-              matchCardData={recentMatchDataItem}
+        {isLoading ? (
+          //   <div testid="loader">
+          <div>
+            <Loader type="Oval" color="#ffffff" height={50} width={50} />
+          </div>
+        ) : (
+          <>
+            <img
+              className="team-matches-top-image"
+              src={teamBannerUrl}
+              alt="team banner"
             />
-          ))}
-        </ul>
+            <h1 className="team-latest-matches-header">Latest Matches</h1>
+            <LatestMatch matchData={latestMatchDetails} />
+            <ul className="team-match-card-collection">
+              {recentMatches.map(recentMatchDataItem => (
+                <MatchCard
+                  key={recentMatchDataItem.id}
+                  matchCardData={recentMatchDataItem}
+                />
+              ))}
+            </ul>
+          </>
+        )}
       </div>
     )
   }
