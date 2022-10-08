@@ -11,10 +11,23 @@
   font-family: 'Bree Serif';
 }
 
+.ipl-brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ipl-logo-img {
   height: 5rem;
   width: 5rem;
   margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+.ipl-header {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .ipl-team-card-collection {
