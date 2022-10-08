@@ -12,13 +12,69 @@
   color: #ffffff;
 }
 
+.competing-team-data-and-match-summary-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .latest-match-summary {
+  border-bottom: 0.1rem solid #475569;
+}
+
+.competing-team-logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.latest-match-participants-and-rewards {
+  border: 0;
+}
+
+.latest-match-summary,
+.latest-match-participants-and-rewards {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: flex-start;
   padding: 1.5rem 1rem;
-  border-bottom: 0.1rem solid #475569;
+  margin: 0;
+}
+
+.competing-team-name-header,
+.match-date {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.match-venue,
+.match-result,
+.innings-team-name,
+.man-of-the-match,
+.umpires {
+  font-size: 0.8rem;
+}
+
+.innings-header,
+.umpires-header {
+  font-size: 0.9rem;
+}
+
+.man-of-the-match-header {
+  font-size: 1rem;
+}
+
+.match-venue,
+.match-result,
+.innings-team-name,
+.man-of-the-match,
+.umpires,
+.innings-header,
+.umpires-header,
+.man-of-the-match-header {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
