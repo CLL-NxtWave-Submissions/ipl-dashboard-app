@@ -1,8 +1,9 @@
 .team-card-container {
-  background: transparent;
+  background-color: #ffffff33;
   border: 0.1rem solid #ffffff;
   border-radius: 0.8rem;
-  width: 40%;
+  width: 40vw;
+  height: 8rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
@@ -15,6 +16,7 @@
 .team-image {
   height: 4rem;
   width: 4rem;
+  margin-right: 1rem;
 }
 
 .team-name {
@@ -22,6 +24,11 @@
   font-size: 1rem;
   font-weight: 600;
   font-family: 'Bree Serif';
+  text-align: center;
+}
+
+.team-card-routing-link {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
