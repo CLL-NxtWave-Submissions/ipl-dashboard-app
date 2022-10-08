@@ -9,6 +9,7 @@
   align-items: center;
   padding: 1.5rem;
   font-family: 'Bree Serif';
+  width: 100%;
 }
 
 .ipl-brand-container {
@@ -38,6 +39,7 @@
   padding: 0;
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
