@@ -1,5 +1,6 @@
 .team-matches-bg-container {
   background-size: cover;
+  min-width: 400px;
   min-height: 100vh;
   height: 100%;
   padding: 1rem;
@@ -10,35 +11,35 @@
 }
 
 .rcb-background {
-  background-image: liner-gradient(to bottom, #1e293b, #a4261d);
+  background-image: linear-gradient(to bottom, #1e293b, #a4261d);
 }
 
 .kkr-background {
-  background-image: liner-gradient(to bottom, #f7db00, #13418b);
+  background-image: linear-gradient(to bottom, #f7db00, #13418b);
 }
 
 .kxp-background {
-  background-image: liner-gradient(to bottom, #d91c1f, #a4261d);
+  background-image: linear-gradient(to bottom, #d91c1f, #a4261d);
 }
 
 .csk-background {
-  background-image: liner-gradient(to bottom, #f26d22, #5755a7);
+  background-image: linear-gradient(to bottom, #f26d22, #5755a7);
 }
 
 .rr-background {
-  background-image: liner-gradient(to bottom, #4f5db0, #5755a7, #13418b);
+  background-image: linear-gradient(to bottom, #4f5db0, #5755a7, #13418b);
 }
 
 .mi-background {
-  background-image: liner-gradient(to bottom, #f26d22, #13418b, #ffffff33);
+  background-image: linear-gradient(to bottom, #f26d22, #13418b, #ffffff33);
 }
 
 .sh-background {
-  background-image: liner-gradient(to bottom, #d91c1f, #f26d22, #ffffff33);
+  background-image: linear-gradient(to bottom, #d91c1f, #f26d22, #ffffff33);
 }
 
 .dc-background {
-  background-image: liner-gradient(
+  background-image: linear-gradient(
     to bottom,
     #4f5db0,
     #13418b,
@@ -50,7 +51,7 @@
 .team-matches-top-image {
   width: 100%;
   border-radius: 0.4rem;
-  margin: 2rem 0.5rem;
+  margin: 2rem 0.5rem 1rem 0.5rem;
 }
 
 .team-latest-matches-header {
@@ -58,13 +59,15 @@
   font-size: 1.2rem;
   font-weight: 550;
   font-family: 'Bree Serif';
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0;
+  align-self: flex-start;
 }
 
 .team-match-card-collection {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;

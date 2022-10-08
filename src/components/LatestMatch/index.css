@@ -1,10 +1,11 @@
 .latest-match-bg-container {
   background-color: #1e293b;
   border-radius: 0.8rem;
-  padding: 1rem 0;
+  padding: 0;
   width: 100%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,19 +20,22 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  border-bottom: 0.1rem solid #475569;
 }
 
 .latest-match-summary {
-  border-bottom: 0.1rem solid #475569;
+  margin: 0;
 }
 
 .competing-team-logo {
   height: 5rem;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .latest-match-participants-and-rewards {
   border: 0;
+  align-self: flex-start;
 }
 
 .latest-match-summary,
@@ -44,10 +48,23 @@
   margin: 0;
 }
 
+.competing-team-name-header {
+  margin-bottom: 0.5rem;
+}
+
+.match-date {
+  margin-top: 1;
+  margin-bottom: 1rem;
+}
+
 .competing-team-name-header,
 .match-date {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+}
+
+.match-venue,
+.match-result {
+  margin-bottom: 0.5rem;
 }
 
 .match-venue,
@@ -59,31 +76,265 @@
 }
 
 .innings-header,
-.umpires-header {
-  font-size: 0.9rem;
-}
-
+.umpires-header,
 .man-of-the-match-header {
+  font-weight: 550;
   font-size: 1rem;
 }
 
-.match-venue,
-.match-result,
 .innings-team-name,
 .man-of-the-match,
 .umpires,
 .innings-header,
 .umpires-header,
 .man-of-the-match-header {
+  margin-top: 0;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 650px) {
+  .competing-team-logo {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 1.7rem;
+  }
+
+  .match-venue,
+  .match-result,
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 0.85rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .competing-team-logo {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 2rem;
+  }
+
+  .match-venue,
+  .match-result,
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 0.95rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 768px) {
   .latest-match-bg-container {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .competing-team-data-and-match-summary-container {
+    border: none;
+    justify-content: space-between;
+    width: 70%;
   }
 
   .latest-match-summary {
-    border-bottom: none;
+    margin-right: 2rem;
+  }
+
+  .competing-team-logo {
+    height: 13rem;
+    width: 13rem;
+    margin-right: 1rem;
+  }
+
+  .latest-match-participants-and-rewards {
+    align-self: auto;
+    margin-right: 0;
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    padding-right: 0;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 2rem;
+  }
+
+  .match-venue,
+  .match-result {
+    font-size: 1rem;
+  }
+
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 0.8rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 870px) {
+  .competing-team-data-and-match-summary-container {
+    width: 71%;
+  }
+
+  .competing-team-logo {
+    height: 15rem;
+    width: 15rem;
+    margin-right: 1rem;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 2.1rem;
+  }
+
+  .match-venue,
+  .match-result {
+    font-size: 0.95rem;
+  }
+
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 0.8rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .competing-team-data-and-match-summary-container {
+    width: 72%;
+  }
+
+  .competing-team-logo {
+    height: 16rem;
+    width: 16rem;
+    margin-right: 1rem;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 2.3rem;
+  }
+
+  .match-venue,
+  .match-result {
+    font-size: 1.05rem;
+  }
+
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 0.9rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .competing-team-data-and-match-summary-container {
+    width: 75%;
+  }
+
+  .competing-team-logo {
+    height: 18rem;
+    width: 18rem;
+    margin-right: 1rem;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 2.5rem;
+  }
+
+  .match-venue,
+  .match-result {
+    font-size: 1.15rem;
+  }
+
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 1rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1175px) {
+  .competing-team-data-and-match-summary-container {
+    width: 67%;
+  }
+
+  .competing-team-logo {
+    height: 19rem;
+    width: 19rem;
+    margin-right: 1rem;
+  }
+
+  .competing-team-name-header,
+  .match-date {
+    font-size: 2.5rem;
+  }
+
+  .match-venue,
+  .match-result {
+    font-size: 1.25rem;
+  }
+
+  .innings-team-name,
+  .man-of-the-match,
+  .umpires {
+    font-size: 1rem;
+  }
+
+  .innings-header,
+  .umpires-header,
+  .man-of-the-match-header {
+    font-size: 1.5rem;
   }
 }

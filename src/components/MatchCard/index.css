@@ -3,20 +3,22 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 0.8rem;
-  width: 35%;
+  width: 45%;
+  min-height: 15rem;
+  height: 17rem;
+  max-height: 20rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-family: 'Bree Serif';
 }
 
 .match-card-competing-team-logo {
   height: 3rem;
   width: 3rem;
-  margin-bottom: 1.5rem;
 }
 
 .match-card-competing-team-name {
@@ -27,10 +29,15 @@
   font-size: 0.6rem;
 }
 
+.match-card-competing-team-logo,
+.match-card-competing-team-name,
+.match-card-result {
+  margin-bottom: 0;
+}
+
 .match-card-competing-team-name,
 .match-card-result {
   color: #ffffff;
-  margin-bottom: 2rem;
 }
 
 .match-card-status {
@@ -41,6 +48,7 @@
 .match-card-result,
 .match-card-status {
   text-align: center;
+  margin-top: 0;
 }
 
 .game-won {
@@ -51,23 +59,101 @@
   color: #e31a1a;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 570px) {
   .match-card-bg-container {
-    width: 31%;
+    min-height: 17rem;
+    height: 19rem;
+    max-height: 22rem;
   }
 
   .match-card-competing-team-logo {
-    height: 6rem;
-    width: 6rem;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 1rem;
+  }
+
+  .match-card-result {
+    font-size: 0.7rem;
+  }
+
+  .match-card-status {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .match-card-bg-container {
+    min-height: 19rem;
+    height: 21rem;
+    max-height: 23rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 6.5rem;
+    width: 5.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 1.3rem;
+  }
+
+  .match-card-result {
+    font-size: 0.85rem;
+  }
+
+  .match-card-status {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .match-card-bg-container {
+    min-height: 22rem;
+    height: 24rem;
+    max-height: 26rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 7.5rem;
+    width: 6.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 1.5rem;
+  }
+
+  .match-card-result {
+    font-size: 0.95rem;
+  }
+
+  .match-card-status {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .match-card-bg-container {
+    width: 31%;
+    min-height: 22rem;
+    height: 24rem;
+    max-height: 26rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 7.5rem;
+    width: 6.5rem;
     margin-bottom: 1.5rem;
   }
 
   .match-card-competing-team-name {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .match-card-result {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .match-card-competing-team-name,
@@ -76,6 +162,136 @@
   }
 
   .match-card-status {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .match-card-bg-container {
+    width: 31%;
+    min-height: 24rem;
+    height: 26rem;
+    max-height: 28rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 8.5rem;
+    width: 7.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 1.4rem;
+  }
+
+  .match-card-result {
+    font-size: 0.9rem;
+  }
+
+  .match-card-status {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .match-card-bg-container {
+    width: 31%;
+    min-height: 26rem;
+    height: 28rem;
+    max-height: 30rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 9.5rem;
+    width: 8.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 1.6rem;
+  }
+
+  .match-card-result {
+    font-size: 0.95rem;
+  }
+
+  .match-card-status {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .match-card-bg-container {
+    width: 31%;
+    min-height: 29rem;
+    height: 31rem;
+    max-height: 33rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 11rem;
+    width: 10rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 1.85rem;
+  }
+
+  .match-card-result {
+    font-size: 1rem;
+  }
+
+  .match-card-status {
+    font-size: 1.85rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .match-card-bg-container {
+    width: 31%;
+    min-height: 32rem;
+    height: 34rem;
+    max-height: 37rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 12.5rem;
+    width: 11.5rem;
+  }
+
+  .match-card-competing-team-name {
     font-size: 2rem;
+  }
+
+  .match-card-result {
+    font-size: 1.1rem;
+  }
+
+  .match-card-status {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1175px) {
+  .match-card-bg-container {
+    width: 31%;
+    min-height: 34rem;
+    height: 36rem;
+    max-height: 39rem;
+  }
+
+  .match-card-competing-team-logo {
+    height: 13.5rem;
+    width: 12.5rem;
+  }
+
+  .match-card-competing-team-name {
+    font-size: 2.2rem;
+  }
+
+  .match-card-result {
+    font-size: 1.25rem;
+  }
+
+  .match-card-status {
+    font-size: 2.2rem;
   }
 }
