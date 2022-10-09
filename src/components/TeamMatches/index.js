@@ -102,8 +102,7 @@ export default class TeamMatches extends Component {
         className={`team-matches-bg-container ${teamBackgroundGradientStylingClass}`}
       >
         {isLoading ? (
-          //   <div testid="loader">
-          <div>
+          <div testid="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />
           </div>
         ) : (

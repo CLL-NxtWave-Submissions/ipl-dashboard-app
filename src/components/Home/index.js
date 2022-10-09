@@ -41,8 +41,7 @@ export default class Home extends Component {
     return (
       <div className="ipl-dashboard-bg-container">
         {isLoading ? (
-          //   <div testid="loader">
-          <div>
+          <div testid="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />
           </div>
         ) : (
