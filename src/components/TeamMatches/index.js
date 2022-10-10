@@ -30,6 +30,10 @@ export default class TeamMatches extends Component {
     this.fetchTeamAndMatchesData()
   }
 
+  componentWillUnmount() {
+    teamMatchesApiUrl = 'https://apis.ccbp.in/ipl/' // To reset the url upon consecutive requests and avoid duplication of id
+  }
+
   fetchTeamAndMatchesData = async () => {
     const {match} = this.props
     const {params} = match
